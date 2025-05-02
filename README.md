@@ -1,14 +1,16 @@
 # WhatsApp Flight Bot
 
-A modular WhatsApp bot that responds to flight-related queries in both individual and group chats.
+A modular WhatsApp bot that responds to flight-related queries in both individual and group chats, with session management.
 
 ## Features
 
-- Listens for flight-related keywords in messages
+- Listens for any messages in private chats
+- Responds to mentions in group chats
 - Extracts user information (name, number)
-- Works in both individual chats and group mentions
+- Maintains user sessions for 24 hours
 - Calls a mock flight API for information
 - Provides formatted flight search results
+- Persists sessions across restarts
 
 ## Installation
 
