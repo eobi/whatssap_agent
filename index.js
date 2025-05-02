@@ -1,4 +1,12 @@
+const fs = require('fs');
+const path = require('path');
 const whatsappClient = require('./lib/whatsapp-client');
+
+// Ensure data directory exists
+const dataDir = path.join(__dirname, 'data');
+if (!fs.existsSync(dataDir)) {
+  fs.mkdirSync(dataDir, { recursive: true });
+}
 
 // Initialize the WhatsApp client
 whatsappClient.init()
