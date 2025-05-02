@@ -1,0 +1,27 @@
+{
+    "name": "whatsapp-flight-bot",
+    "version": "1.0.0",
+    "description": "WhatsApp bot for flight information queries",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "whatsapp",
+        "bot",
+        "flight",
+        "whatsapp-web.js"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^1.9.0",
+        "qrcode-terminal": "^0.12.0",
+        "whatsapp-web.js": "^1.27.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.10"
+    }
+}
